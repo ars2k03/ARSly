@@ -1,5 +1,5 @@
 import express, { type Application } from "express";
-import router from "./routes/url.route";
+import router from "./routes/url.route.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 

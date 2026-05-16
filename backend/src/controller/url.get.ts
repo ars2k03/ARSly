@@ -1,5 +1,5 @@
 import {type Request, type Response} from "express";
-import URL from "../models/url.model";
+import URL from "../models/url.model.js";
 
 export const redirectUrl = async (req: Request, res: Response) => {
   const shortId : any = req.params.shortId;

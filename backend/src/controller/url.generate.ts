@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import { nanoid } from "nanoid";
-import URL from "../models/url.model";
+import URL from "../models/url.model.js";
 
 export const generateUrl = async (req : Request, res : Response) => {
     const body = req.body;
