@@ -1,3 +1,5 @@
+<div align="center">
+
 # ARSly
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -8,9 +10,11 @@
 **ARSly** is a lightweight URL shortener that converts long links into compact, shareable short URLs.  
 It includes a TypeScript-based backend API powered by Express and MongoDB, plus a live web experience deployed online.
 
+</div>
+
 ## Live Demo
 
-- **Web App:** https://arsly.netlify.app/
+- **Live Demo:** https://arsly.netlify.app/
 
 ---
 
