@@ -7,7 +7,7 @@ const shortUrlInput = document.getElementById("shortUrl");
 const copyBtn = document.getElementById("copyBtn");
 const openLink = document.getElementById("openLink");
 
-const API_BASE_URL = "https://arsly.onrender.com/";
+const API_BASE_URL = "https://arsly.onrender.com";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
