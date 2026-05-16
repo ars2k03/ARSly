@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARSly</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <nav class="navbar">
+      <h2>ARSly</h2>
+      <span>Fast URL Shortener</span>
+    </nav>
+
+    <section class="hero">
+      <h1>Shorten your long links instantly</h1>
+      <p>Paste your long URL and generate a clean, shareable short link.</p>
+
+      <form id="urlForm" class="url-box">
+        <input
+          type="url"
+          id="urlInput"
+          placeholder="Paste your long URL here..."
+          required
+        />
+        <button type="submit" id="submitBtn">Shorten</button>
+      </form>
+
+      <p id="message"></p>
+
+      <div id="resultBox" class="result-box hidden">
+        <span>Your short link</span>
+        <div class="result-row">
+          <input type="text" id="shortUrl" readonly />
+          <button id="copyBtn">Copy</button>
+        </div>
+        <a id="openLink" target="_blank">Open short URL</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
