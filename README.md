@@ -7,10 +7,10 @@
 ![Database](https://img.shields.io/badge/database-MongoDB-brightgreen)
 ![Frontend](https://img.shields.io/badge/frontend-Netlify-black)
 
+</div>
+
 **ARSly** is a lightweight URL shortener that converts long links into compact, shareable short URLs.  
 It includes a TypeScript-based backend API powered by Express and MongoDB, plus a live web experience deployed online.
-
-</div>
 
 ## Live Demo
 
