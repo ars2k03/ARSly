@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app: Application = express();
-const port: number = 3000;
+const port: number = 8080;
 
 mongoose
   .connect(process.env.MONGO_URL as string)
@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/url", router);
+app.use("/", router);
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);

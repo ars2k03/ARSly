@@ -4,7 +4,7 @@ import { redirectUrl } from "../controller/url.get.js";
 
 const router = express.Router();
 
-router.post('/', generateUrl);
+router.post('/url', generateUrl);
 router.get('/:shortId', redirectUrl)
 
 export default router;

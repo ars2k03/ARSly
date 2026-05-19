@@ -7,7 +7,7 @@ const shortUrlInput = document.getElementById("shortUrl");
 const copyBtn = document.getElementById("copyBtn");
 const openLink = document.getElementById("openLink");
 
-const API_BASE_URL = "https://arsly.onrender.com";
+const API_BASE_URL = "http://localhost:8080";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -39,7 +39,7 @@ form.addEventListener("submit", async (e) => {
       throw new Error(data.error || "Something went wrong.");
     }
 
-    const finalShortUrl = `${API_BASE_URL}/url/${data.id}`;
+    const finalShortUrl = `${API_BASE_URL}/${data.id}`;
 
     shortUrlInput.value = finalShortUrl;
     openLink.href = finalShortUrl;
@@ -48,7 +48,7 @@ form.addEventListener("submit", async (e) => {
     resultBox.classList.remove("hidden");
     message.textContent = "Short URL generated successfully.";
   } catch (error) {
-    message.textContent = error.message;
+    message.textContent = error?.message || "Server is not Connected";
   } finally {
     submitBtn.disabled = false;
     submitBtn.textContent = "Shorten";
