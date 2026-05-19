@@ -65,7 +65,7 @@ POST /url
 
 ```json
 {
-  "id": "a1B2c3D4"
+  "id": "a1B3"
 }
 ```
 
@@ -84,13 +84,13 @@ POST /url
 **Endpoint**
 
 ```http
-GET /url/:shortId
+GET /:shortId
 ```
 
 **Example**
 
 ```http
-GET /url/a1B2c3D4
+GET /a1B3
 ```
 
 If the short ID exists, the server redirects the user to the original URL.
@@ -169,7 +169,7 @@ npm run dev
 The backend starts on:
 
 ```text
-http://localhost:3000
+http://localhost:8080
 ```
 
 ---
@@ -201,7 +201,7 @@ Runs the compiled production build.
 ## Example cURL Request
 
 ```bash
-curl -X POST http://localhost:3000/url \
+curl -X POST http://localhost:8080/url \
   -H "Content-Type: application/json" \
   -d '{"url":"https://example.com"}'
 ```
